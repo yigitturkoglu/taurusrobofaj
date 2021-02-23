@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="480.0" prefWidth="800.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="robofajv2.FXMLController">
+   <children>
+      <ImageView fx:id="currentFrame" fitHeight="295.0" fitWidth="290.0" layoutX="255.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="241.0" layoutX="254.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="292.0" />
+      <Label layoutX="255.0" layoutY="14.0" style="-fx-fill: lightseagreen; -fx-stroke: firebrick; -fx-stroke-width: 2px;" styleClass="label-header" text="ROBOFAJ" textAlignment="CENTER">
+         <font>
+            <Font name="Roboto Black" size="65.0" />
+         </font></Label>
+      <Label fx:id="ad_soyad" layoutX="225.0" layoutY="383.0" text="AD SOYAD" textAlignment="CENTER">
+         <font>
+            <Font name="Roboto Condensed Light" size="18.0" />
+         </font></Label>
+      <Label fx:id="tempid" layoutX="106.0" layoutY="234.0" prefHeight="63.0" prefWidth="119.0" text="37.5">
+         <font>
+            <Font name="Roboto Medium" size="51.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo" fitHeight="144.0" fitWidth="143.0" layoutX="602.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="156.0" prefHeight="78.0" prefWidth="119.0" text="  Vücut &#10;Sıcaklığı">
+         <font>
+            <Font name="Roboto Medium" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="154.0" fitWidth="262.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sicaklik.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="262.0" layoutX="547.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dez.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="336.0" layoutY="78.0" style="-fx-fill: lightseagreen; -fx-stroke: firebrick; -fx-stroke-width: 2px;" styleClass="label-header" text="Sağlık Robotu" textAlignment="CENTER">
+         <font>
+            <Font name="Roboto Condensed Light" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
